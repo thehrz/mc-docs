@@ -1,28 +1,31 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress"
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "河坝Minecraft服务器-文档",
-  description: "文档",
+  title: "H8 Network",
+  description: "河坝Minecraft服务器-文档",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    nav: [{ text: "主页", link: "/" }, { text: "皮肤站", link: "https://auth.hfbz.net" }],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: "开始",
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: "简介", link: "/introduction" },
+          { text: "快速开始", link: "/getting-started" },
+        ],
+      },
+      {
+        text: "服务器",
+        items: [{ text: "主服务器", link: "/server/main" }],
+      },
+      {
+        text: "更新日志",
+        link: "/update",
+      },
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+    // socialLinks: [
+    //   { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    // ],
+  },
 })
