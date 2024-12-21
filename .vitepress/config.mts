@@ -11,6 +11,8 @@ export default defineConfig({
     nav: [
       { text: "主页", link: "/" },
       { text: "皮肤站", link: "https://auth.hfbz.net" },
+      { text: "卫星地图", link: "https://map.hfbz.net" },
+
     ],
 
     sidebar: [
